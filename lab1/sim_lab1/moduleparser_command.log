@@ -1,0 +1,1 @@
+C:/lscc/radiant/2024.2/bin/nt64/moduleparser.exe -PROJ sim_lab1 -pf C:/lscc/radiant/2024.2/cae_library/synthesis/vhdl/iCE40UP.vhd -pf C:/lscc/radiant/2024.2/cae_library/synthesis/verilog/iCE40UP.v -lib iCE40UP -sort -lst C:/Users/sjampana/E155/lab1/sim_lab1/source_files.lst

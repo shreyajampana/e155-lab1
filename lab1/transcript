@@ -1,0 +1,38 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading project lab1_ms_sj
+vsim -gui work.seven_seg_testbench -L iCE40UP -voptargs=+acc
+# vsim -gui work.seven_seg_testbench -L iCE40UP -voptargs="+acc" 
+# Start time: 21:59:05 on Sep 01,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.seven_seg_testbench(fast)
+# Loading work.seven_seg_sj(fast)
+add wave  \
+sim:/seven_seg_testbench/clk \
+sim:/seven_seg_testbench/errors \
+sim:/seven_seg_testbench/reset \
+sim:/seven_seg_testbench/s \
+sim:/seven_seg_testbench/seg \
+sim:/seven_seg_testbench/seg_expected \
+sim:/seven_seg_testbench/testvectors \
+sim:/seven_seg_testbench/vectornum
+run -all
+#         16 tests completed with          0 errors
+# ** Note: $stop    : C:/Users/sjampana/E155/lab1/source/impl_1/seven_seg_testbench.sv(82)
+#    Time: 175 ns  Iteration: 1  Instance: /seven_seg_testbench
+# Break in Module seven_seg_testbench at C:/Users/sjampana/E155/lab1/source/impl_1/seven_seg_testbench.sv line 82
+# Causality operation skipped due to absence of debug database file

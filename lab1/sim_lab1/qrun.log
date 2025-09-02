@@ -1,0 +1,51 @@
+# *** Summary *********************************************
+#     qrun: Errors:   0, Warnings:   0
+#     vlog: Errors:   0, Warnings:   0
+#     vopt: Errors:   0, Warnings:   2
+#   Totals: Errors:   0, Warnings:   2
+# vsim -L work -L pmi_work -L ovi_ice40up -lib qrun.out/work -wlf vsim.wlf -gui -do "view wave" -do "add wave /*" -do "run 100 ns" -statslog qrun.out/stats_log qrun_opt -suppress vsim-7033,vsim-8630,3009,3389 -appendlog -l qrun.log 
+# Start time: 16:46:23 on Sep 01,2025
+# Loading sv_std.std
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_sj(fast)
+# Loading ovi_ice40up.HSOSC(fast)
+# Loading work.seven_seg_sj(fast)
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# add wave /*
+# run 100 ns
+# ** Warning: (vsim-7) Failed to open readmem file "./lab1.tv" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/sjampana/E155/lab1/source/impl_1/lab1_testbench.sv(39)
+#    Time: 0 ps  Iteration: 0  Instance: /lab1_testbench
+# Error: inputs = xxxx
+#  outputs = xxx 1111111 (xxx xxxxxxx expected)
+#          1 tests completed with          1 errors
+# ** Note: $stop    : C:/Users/sjampana/E155/lab1/source/impl_1/lab1_testbench.sv(81)
+#    Time: 0 ps  Iteration: 1  Instance: /lab1_testbench
+# Break in Module lab1_testbench at C:/Users/sjampana/E155/lab1/source/impl_1/lab1_testbench.sv line 81
+# Causality operation skipped due to absence of debug database file
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_sj(fast)
+# Loading ovi_ice40up.HSOSC(fast)
+# Loading work.seven_seg_sj(fast)
+run -all
+# Error: inputs = xxxx
+#  outputs = xxx 1111111 (xxx xxxxxxx expected)
+# Break key hit
+# Simulation stop requested.
+run 100
+restart -f
+# Loading work.lab1_testbench(fast)
+# Loading work.lab1_sj(fast)
+# Loading ovi_ice40up.HSOSC(fast)
+# Loading work.seven_seg_sj(fast)
+run 1000
+# Error: inputs = xxxx
+#  outputs = xxx 1111111 (xxx xxxxxxx expected)
+# Break key hit
+# Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+# End time: 20:23:55 on Sep 01,2025, Elapsed time: 3:37:32
+# Errors: 0, Warnings: 0
