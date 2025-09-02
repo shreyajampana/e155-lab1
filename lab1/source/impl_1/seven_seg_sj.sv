@@ -7,8 +7,6 @@ This 7 segment display module allows for the output of a hexadecimal number ente
 
 module seven_seg_sj(input logic [3:0] s,
 	output logic [6:0] seg);
-	
-	logic clk;
 
 	always_comb
 		case(s)
@@ -31,4 +29,5 @@ module seven_seg_sj(input logic [3:0] s,
 			default: seg = 7'b1111111;
 		endcase
 			
+
 endmodule
